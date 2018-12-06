@@ -1260,7 +1260,7 @@
     if (!gl) { gl = null }
     return gl
   }
-
+//所有支持的组件
   var components = [
     {key: 'userAgent', getData: UserAgent},
     {key: 'language', getData: languageKey},
@@ -1299,7 +1299,7 @@
   var Fingerprint2 = function (options) {
     throw new Error("'new Fingerprint()' is deprecated, see https://github.com/Valve/fingerprintjs2#upgrade-guide-from-182-to-200")
   }
-
+//获取设备指纹入口方法
   Fingerprint2.get = function (options, callback) {
     if (!callback) {
       callback = options
@@ -1362,7 +1362,7 @@
       Fingerprint2.get(options, resolve)
     })
   }
-
+//兼容老版本的获取设备指纹方法
   Fingerprint2.getV18 = function (options, callback) {
     if (callback == null) {
       callback = options
