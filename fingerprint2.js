@@ -228,7 +228,7 @@
     h2 = x64Add(h2, h1)
     return ('00000000' + (h1[0] >>> 0).toString(16)).slice(-8) + ('00000000' + (h1[1] >>> 0).toString(16)).slice(-8) + ('00000000' + (h2[0] >>> 0).toString(16)).slice(-8) + ('00000000' + (h2[1] >>> 0).toString(16)).slice(-8)
   }
-
+//默认配置项
   var defaultOptions = {
     preprocessor: null,
     audio: {
